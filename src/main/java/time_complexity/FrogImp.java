@@ -1,4 +1,4 @@
-package lesson1;
+package time_complexity;
 
 import org.junit.Assert;
 
