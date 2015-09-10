@@ -1,8 +1,13 @@
 package couting_elements;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.junit.Assert;
+
 /**
- * Solution: {@link https://codility.com/demo/results/demoFQYE6M-WEA/}
+ * Solution: {@link https://codility.com/demo/results/demoM75EUJ-H3Y/}
+ * 
  * @author Mariano
  *
  */
@@ -23,24 +28,18 @@ public class PermCheck {
 
 	public int solution(int[] A) {
 		final int maxElement = A.length;
-		int[] countingElements = new int[maxElement];
 
+		final Set<Integer> set = new HashSet<Integer>();
 		for (int element : A) {
-			if(element > A.length) {
+			if (element > maxElement || element < 0) {
 				return 0;
 			}
-			int count = countingElements[element - 1] + 1;
-			if (count > 1) {
+			if (set.contains(element)) {
 				return 0;
 			}
-			countingElements[element - 1] = countingElements[element - 1] + 1;
+			set.add(element);
 		}
 
-		for (int count : countingElements) {
-			if (count == 0) {
-				return 0;
-			}
-		}
-		return 1;
+		return set.size() == maxElement ? 1 : 0;
 	}
 }
