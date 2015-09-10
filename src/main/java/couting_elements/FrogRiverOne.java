@@ -1,7 +1,11 @@
 package couting_elements;
 
 import org.junit.Assert;
-
+/**
+ * Solution: {@link: https://codility.com/demo/results/demoM7NRCJ-F8M/}
+ * @author Mariano
+ *
+ */
 public class FrogRiverOne {
 
 	public static void main(String[] args) {
@@ -24,23 +28,26 @@ public class FrogRiverOne {
 	}
 
 	public int solution(int X, int[] A) {
-		Integer[] positions = new Integer[100001];
+		int[] positions = new int[X];
+		for (int i = 0; i < positions.length; i++) {
+			positions[i] = -1;
+		}
 		for (int i = 0; i < A.length; i++) {
 			int position = A[i];
-			Integer leaveTime = positions[position];
-			if (leaveTime == null || i < leaveTime) {
-				positions[position] = i;
+			if (position <= X) {
+				if (positions[position - 1] == -1) {
+					positions[position - 1] = i;
+				}
 			}
 		}
-		int max = 0;
-		for (int position = 1; position <= X; position++) {
-			Integer leaveTime = positions[position];
-			if (leaveTime == null) {
+		int solution = 0;
+		for (int position = 0; position < X; position++) {
+			int leaveTime = positions[position];
+			if (leaveTime == -1) {
 				return -1;
 			}
-			max = Math.max(max, leaveTime);
+			solution = Math.max(solution, leaveTime);
 		}
-
-		return max;
+		return solution;
 	}
 }
