@@ -31,8 +31,8 @@ public class PermMissingElem {
 		long N = A.length + 1;
 		long total = N * (N + 1) / 2;
 		for (int element : A) {
-			total = total - element;
-		}
+            total = total - element;
+        }
 		return (int) (total);
 	}
 }

@@ -28,7 +28,7 @@ public class TapeEquilibrium {
 			left = left + A[p];
 			int right = allSum - left;
 			int diff = Math.abs(left - right);
-			System.out.println("For P = " + p + ", difference = |" + left + " - " + right + "| = " + diff);
+
 			if (diff < min) {
 				min = diff;
 			}

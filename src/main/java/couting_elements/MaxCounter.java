@@ -6,7 +6,8 @@ import org.junit.Assert;
 
 /**
  * 
- * Solution: {@link https://codility.com/demo/results/trainingQEBJUN-XUU/}
+ * See <a href="https://codility.com/demo/results/trainingQEBJUN-XUU/">Solution</a>
+ *
  * @author mlischetti
  *
  */

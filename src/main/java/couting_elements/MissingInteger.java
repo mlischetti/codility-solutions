@@ -6,7 +6,8 @@ import java.util.Set;
 import org.junit.Assert;
 
 /**
- * Solution {@link https://codility.com/demo/results/demoJYBU6G-HEX/}
+ * See <a href="https://codility.com/demo/results/demoJYBU6G-HEX/">Solution</a>
+ *
  * @author mlischetti
  *
  */

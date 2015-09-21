@@ -6,8 +6,8 @@ import java.util.Set;
 import org.junit.Assert;
 
 /**
- * Solution: {@link https://codility.com/demo/results/demoM75EUJ-H3Y/}
- * 
+ * See <a href="https://codility.com/demo/results/demoM75EUJ-H3Y/">Solution</a>
+ *
  * @author Mariano
  *
  */
