@@ -6,10 +6,9 @@ public class TapeEquilibrium {
 
 	public static void main(String[] args) {
 		TapeEquilibrium equilibrium = new TapeEquilibrium();
-		int solution = -1;
 
 		int[] A = new int[] { 3, 1, 2, 4, 3 };
-		solution = equilibrium.solution(A);
+		int solution = equilibrium.solution(A);
 		Assert.assertEquals(1, solution);
 
 		int[] B = new int[] { 5, 6, 2, 4, 1 };
@@ -39,7 +38,7 @@ public class TapeEquilibrium {
 
 	public int sum(int[] A, int index) {
 		int sum = 0;
-		for (int i = index; i < A.length; i++) {
+		for (int i = index, len = A.length; i < len; i++) {
 			sum = sum + A[i];
 		}
 		return sum;

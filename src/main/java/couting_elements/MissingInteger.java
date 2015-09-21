@@ -27,14 +27,14 @@ public class MissingInteger {
 	}
 
 	public int solution(int[] A) {
-		final Set<Integer> possitives = new HashSet<Integer>();
+		final Set<Integer> positives = new HashSet<>();
 		for (int element : A) {
 			if (element > 0) {
-				possitives.add(element);
+				positives.add(element);
 			}
 		}
 		for (int i = 1; i < Integer.MAX_VALUE; i++) {
-			if (!possitives.contains(i)) {
+			if (!positives.contains(i)) {
 				return i;
 			}
 		}

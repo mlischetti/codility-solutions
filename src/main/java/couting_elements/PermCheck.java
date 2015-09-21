@@ -29,7 +29,7 @@ public class PermCheck {
 	public int solution(int[] A) {
 		final int maxElement = A.length;
 
-		final Set<Integer> set = new HashSet<Integer>();
+		final Set<Integer> set = new HashSet<>();
 		for (int element : A) {
 			if (element > maxElement || element < 0) {
 				return 0;
