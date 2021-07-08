@@ -7,15 +7,20 @@ assignees: ''
 
 ---
 
+**Versions used**
+MMA version
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+***Expected Behavior***
+Please describe the expected behavior of the issue, starting from the first action.
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+***Actual Behavior***
+Please provide a description of what actually happens, working from the same starting point.
+
+**Relevant logs**
+If you identified a section in your logs that explains the bug or might be important to understand it, please add it. 
+
+**Reproducible Test Case**
+Please try to isolate a sample Mule 3 app and add the result so that the issue can be reproduced and investigated.
